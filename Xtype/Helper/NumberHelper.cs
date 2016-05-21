@@ -2,9 +2,9 @@
 {
     static class NumberHelper
     {
-        public static int AddTurn(int o1, int o2, int maxValue)
+        internal static int AddTurn(int value1, int value2, int maxValue)
         {
-            var tmp = unchecked(o1 + o2);
+            var tmp = unchecked(value1 + value2);
             var temp = tmp - maxValue;
             if(temp > 0)
             {
@@ -12,14 +12,28 @@
             }
             return tmp;
         }
-        public static int AddTurn(int o1, int o2)
+        internal static int AddTurn(int value1, int value2)
         {
-            return AddTurn(o1, o2, int.MaxValue);
+            return AddTurn(value1, value2, int.MaxValue);
+        }
+        internal static long AddTurn(long value1, long value2, long maxValue)
+        {
+            var tmp = unchecked(value1 + value2);
+            var temp = tmp - maxValue;
+            if (temp > 0)
+            {
+                return temp;
+            }
+            return tmp;
+        }
+        internal static long AddTurn(long value1, long value2)
+        {
+            return AddTurn(value1, value2, long.MaxValue);
         }
 
-        public static int SubTurn(int o1, int o2, int minValue)
+        internal static int SubTurn(int value1, int value2, int minValue)
         {
-            var tmp = unchecked(o1 - o2);
+            var tmp = unchecked(value1 - value2);
             var temp = tmp + minValue;
             if (temp < 0)
             {
@@ -27,9 +41,23 @@
             }
             return tmp;
         }
-        public static int SubTurn(int o1, int o2)
+        internal static int SubTurn(int value1, int value2)
         {
-            return SubTurn(o1, o2, int.MinValue);
+            return SubTurn(value1, value2, int.MinValue);
+        }
+        internal static long SubTurn(long value1, long value2, long minValue)
+        {
+            var tmp = unchecked(value1 - value2);
+            var temp = tmp + minValue;
+            if (temp < 0)
+            {
+                return temp;
+            }
+            return tmp;
+        }
+        internal static long SubTurn(long value1, long value2)
+        {
+            return SubTurn(value1, value2, long.MinValue);
         }
     }
 }
