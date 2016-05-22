@@ -1,0 +1,5 @@
+D:\1_MyRepo\GitHub\Xtype\Xtype\bin\Release\Xtype.dll
+D:\1_MyRepo\GitHub\Xtype\Xtype\bin\Release\Xtype.pdb
+D:\1_MyRepo\GitHub\Xtype\Xtype\obj\Release\Xtype.csprojResolveAssemblyReference.cache
+D:\1_MyRepo\GitHub\Xtype\Xtype\obj\Release\Xtype.dll
+D:\1_MyRepo\GitHub\Xtype\Xtype\obj\Release\Xtype.pdb

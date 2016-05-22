@@ -35,11 +35,15 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .NET Framework is automatically included -->
+    <Folder Include="Date\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customer\CustomerValue.cs" />
+    <Compile Include="Helper\GenericOperator.cs" />
     <Compile Include="Helper\NumberHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Nint.cs" />
+    <Compile Include="xbyte.cs" />
     <Compile Include="xint.cs" />
     <Compile Include="xlong.cs" />
   </ItemGroup>
